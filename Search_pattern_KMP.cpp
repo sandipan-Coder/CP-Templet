@@ -73,3 +73,13 @@ bool KMPSearch(string pat, string txt) {
     
     return false;
 }
+
+//? **************************** Time & Space Complexity **********************************
+
+/*
+
+    Expected Time Complexity: O(N+M).
+    Expected Auxiliary Space: O(M).
+    Note: N = |S|, M = |P|.
+
+*/
