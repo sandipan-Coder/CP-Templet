@@ -19,6 +19,15 @@ This is some template of CP problems.
 
     ### Total number of subarrays
     For array of size n: `n(n+1)/2`
+
+2. # For creating a 2D matrix prefixSum Array
+    ### Let `pref[i][j]` = sum of elements in submatrix `(0,0) to (i-1,j-1)`.
+
+    =>  `pref[i][j] = arr[i - 1][j - 1] + pref[i - 1][j] + pref[i][j - 1] - pref[i - 1][j - 1]`
+
+    ### For query-Sum `query (r1, c1) to (r2, c2)`:
+    => `sum = pref[r2 + 1][c2 + 1] - pref[r1][c2 + 1] - pref[r2 + 1][c1] + pref[r1][c1]`
+
 	​
 
 
