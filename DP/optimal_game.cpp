@@ -122,3 +122,6 @@ int maximumAmount(vector<int> &arr) {
     
     return ans;
 }
+
+//! Problem Link :- https://www.geeksforgeeks.org/problems/optimal-strategy-for-a-game-1587115620/1
+//? Document Link :- https://www.geeksforgeeks.org/dsa/optimal-strategy-for-a-game-dp-31/
