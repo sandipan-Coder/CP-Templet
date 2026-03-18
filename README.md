@@ -23,10 +23,10 @@ This is some template of CP problems.
 2. # For creating a 2D matrix prefixSum Array
     ### Let `pref[i][j]` = sum of elements in submatrix `(0,0) to (i-1,j-1)`.
 
-    =>  `pref[i][j] = arr[i - 1][j - 1] + pref[i - 1][j] + pref[i][j - 1] - pref[i - 1][j - 1]`
+    =>  `pref[i][j] = arr[i][j] + pref[i - 1][j] + pref[i][j - 1] - pref[i - 1][j - 1]`
 
     ### For query-Sum `query (r1, c1) to (r2, c2)`:
-    => `sum = pref[r2 + 1][c2 + 1] - pref[r1][c2 + 1] - pref[r2 + 1][c1] + pref[r1][c1]`
+    => `sum = pref[r2][c2] - pref[r1 - 1][c2] - pref[r2][c1 - 1] + pref[r1 - 1][c1 - 1]`
 
 	​
 
